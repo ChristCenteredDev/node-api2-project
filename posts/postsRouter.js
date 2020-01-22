@@ -54,7 +54,7 @@ router.get('/:id', (req, res) => {
 // Error Destructuring Title, Contents???  Now undefined
 router.put('/:id', (req, res) => {
   const { id } = req.params;
-  console.log(req.body.contents);
+  console.log(req.body);
   const contents = req.body.contents;
   const title = req.body.title;
 
